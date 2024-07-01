@@ -21,7 +21,7 @@ export default function BeerCard({ id, name, brewery, description, origin, style
 	const finaledate = newdate.toDateString()
 	return (
 		<Link href={`/dashboard/beers/${encodeURIComponent(id)}`}>
-			<div className="bg-white rounded-lg shadow-lg">
+			<div className="col-span-1 flex flex-col bg-white rounded-lg shadow-lg">
 				<div>
 					<Image src="https://images.unsplash.com/photo-1579065436839-f2bb127c5606?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={4000} height={6000} alt="Beer" className="w-full h-64 object-cover"/>
 				</div>

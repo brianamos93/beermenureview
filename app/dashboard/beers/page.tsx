@@ -6,7 +6,7 @@ import { Beer } from "@/app/lib/definitions";
 export default async function Page() {
 	const allbeers = await GetAllBeers();
 	return (
-		<div className="flex flex-col justify-center items-center gap-8">
+		<div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
 			{allbeers.map((beer: Beer) => (
 				<BeerCard
 				key={beer.id}
