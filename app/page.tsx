@@ -1,5 +1,7 @@
 import { lusitana } from '@/app/ui/fonts';
 import type { Metadata } from 'next'
+import Link from 'next/link';
+
 
 export const metadata: Metadata = {
   title: 'Test App Home',
@@ -10,15 +12,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-6">
 
-      <h1 className='text-xl text-blue-700'>Title</h1>
+      <h1 className='text-xl text-blue-700'>Test App</h1>
       <p
       className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
       >
-      <strong>Welcome to Acme.</strong> This is the example for the{' '}
-      <a href="https://nextjs.org/learn/" className="text-blue-500">
-        Next.js Learn Course
-      </a>
-      , brought to you by Vercel.
+      <strong>Welcome to Test Platform.</strong> This is the example for the{' '}
+      <Link href="/dashboard" className="text-blue-500">
+        Dashboard
+      </Link>
     </p>
     </main>
   )

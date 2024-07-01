@@ -4,7 +4,8 @@ import {
 	UserGroupIcon,
 	HomeIcon,
 	DocumentTextIcon,
-	BuildingStorefrontIcon
+	BuildingStorefrontIcon,
+	GlobeAltIcon
   } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -19,9 +20,14 @@ import clsx from 'clsx';
 		icon: HomeIcon 
 	},
 	{
-	  	name: 'Posts',
-	  	href: '/dashboard/posts',
-	  	icon: DocumentTextIcon,
+		name: 'Beers',
+		href: '/dashboard/beers',
+		icon: GlobeAltIcon
+	},
+	{
+		name: 'Menus',
+		href: '/dashboard/menus',
+		icon: BuildingStorefrontIcon
 	},
 	{ 
 		name: 'Friends', 
@@ -29,10 +35,11 @@ import clsx from 'clsx';
 		icon: UserGroupIcon 
 	},
 	{
-		name: 'Menus',
-		href: '/dashboard/menus',
-		icon: BuildingStorefrontIcon
-	}
+		name: 'Reviews',
+		href: '/dashboard/reviews',
+		icon: DocumentTextIcon
+	},
+
   ];
   
   export default function NavLinks() {
