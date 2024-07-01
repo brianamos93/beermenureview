@@ -17,6 +17,9 @@ export default async function Page() {
 				abv={beer.abv}
 				ibu={beer.ibu}
 				createdAt={beer.createdAt}
+				author={beer.author}
+				style={beer.style}
+				id={beer.id}
 				/>
 			))}
 		</div>

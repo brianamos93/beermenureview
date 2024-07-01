@@ -1,13 +1,15 @@
 export type Beer = {
 	id: string,
-	createdAt: Date,
+	createdAt: string,
 	name: string,
 	brewery: string,
 	description: string,
 	origin: string,
 	color: string,
 	abv: number,
-	ibu: number
+	ibu: number,
+	author: string,
+	style: string
 
 }
 

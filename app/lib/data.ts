@@ -1,3 +1,5 @@
+export const api_string = "https://667d60b4297972455f64dd56.mockapi.io/api"
+
 export async function GetAllReviews () {
 	try {
 		const res = await fetch('https://65965ce06bb4ec36ca0272c1.mockapi.io/api/reviews')
